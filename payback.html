@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css's/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Calculo Payback</title>
+</head>
+<body>
+  <main id="container">
+    <section id="img">
+      <img src="images/home.svg" alt="">
+    </section>
+
+    <section id="calculator">
+      <form id="form">
+        <h1 id="title">
+          Calculadora Limpeza de Modulos / Payback
+        </h1>
+        
+        <div class="input-box">
+          <label for="qt_modulos">
+            Quantidade de Módulos
+          </label>
+          <div class="input-field">
+            <i class="fa-solid fa-microchip"></i>
+            <input type="number" id="qt_modulos" required>
+            <span>
+              Módulos
+            </span>
+          </div>
+        </div>
+
+        <div class="input-box">
+          <label for="custo_modulo">
+            Custo por módulo
+          </label>
+          <div class="input-field">
+            <i class="fa-solid fa-money-bill-wave"></i>
+            <input type="number" id="custo_modulo" required>
+            <span>
+              Reais
+            </span>
+          </div>
+        </div>
+
+        <div class="input-box">
+          <label for="freq_anual">
+            Frequência anual de limpeza
+          </label>
+          <div class="input-field">
+            <i class="fa-solid fa-spray-can-sparkles"></i>
+            <input type="number" id="freq_anual" required>
+            <span>
+              Vezes
+            </span>
+          </div>
+        </div>
+
+        <div class="input-box">
+          <label for="impostos">
+            Impostos
+          </label>
+          <div class="input-field">
+            <i class="fa-solid fa-weight-hanging"></i>
+            <input type="number" id="impostos" required>
+            <span>
+              %
+            </span>
+          </div>
+        </div>
+
+        <div class="input-box">
+          <label for="desp_extra">
+            Despezas Extras
+          </label>
+          <div class="input-field">
+            <i class="fa-solid fa-money-bill-wave"></i>
+            <input type="number" id="desp_extra" required>
+            <span>
+              Reais
+            </span>
+          </div>
+        </div>
+
+        <div class="input-box">
+          <label for="margem_lucro">
+            Margem de Lucro
+          </label>
+          <div class="input-field">
+            <i class="fa-solid fa-cash-register"></i>
+            <input type="number" id="margem_lucro" required>
+            <span>
+              %
+            </span>
+          </div>
+        </div>
+
+        <div class="input-box">
+          <label for="ganhoanual_limp">
+            Ganho Anual Estimado com Limpeza
+          </label>
+          <div class="input-field">
+            <i class="fa-solid fa-money-bill-wave"></i>
+            <input type="number" id="ganhoanual_limp" required>
+            <span>
+              Reais
+            </span>
+          </div>
+        </div>
+
+        <button id="calculate">
+          Calcular
+        </button>
+      </form>
+
+      <div id="infos" class="hidden">
+        <div id="custoTotalLimpeza" class="answer">
+          <div id="result" class="result1">
+
+            <span>Custo total limpeza</span>
+            <span id="value"></span>
+
+          </div>
+          <div id="description">
+            <span></span>
+          </div>
+        </div>
+
+        <div id="custoComImpostos" class="answer">
+          <div id="result" class="result2">
+            
+            <span>Custo com impostos</span>
+            <span id="value"></span>
+            
+          </div>
+          <div id="description">
+            <span></span>
+          </div>
+        </div>
+
+        <div id="valorFinal" class="answer">
+          <div id="result" class="result3">
+
+            <span>Valor Final</span>
+            <span id="value"></span>
+            
+          </div>
+          <div id="description">
+            <span></span>
+          </div>
+        </div>
+
+        <div id="payback" class="answer">
+          <div id="result" class="result4">
+
+            <span>Payback em</span>
+            <span id="value"></span>
+
+          </div>
+          <div id="description">
+            <span></span>
+          </div>
+        </div>
+
+        
+
+        
+      </div>
+    </section>
+  </main>
+
+  <script src="javascript/teste.js"></script>
+</body>
+</html>
