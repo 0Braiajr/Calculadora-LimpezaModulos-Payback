@@ -1,0 +1,1 @@
+Uma calculadora com objetivo de retornar o tempo estimado de payback de uma instalação solar, ela calcula baseado no ganho anual da empresa, ou seja, cada empresa vai ter um resultado diferente. O calculo tem uma taxa de imposto fixo.
